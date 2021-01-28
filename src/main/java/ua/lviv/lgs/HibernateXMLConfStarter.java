@@ -26,7 +26,13 @@ public class HibernateXMLConfStarter {
 
 		Set<Item> seti = new HashSet<>();
 		Item i1 = new Item(5.);
+		Item i2 = new Item(6.);
+		Item i3 = new Item(7.);
+		Item i4 = new Item(8.);
 		seti.add(i1);
+		seti.add(i2);
+		seti.add(i3);
+		seti.add(i4);
 		Transaction transaction = session.beginTransaction();
 		Cart cart1 = new Cart(2., "cart1", seti);
 		session.persist(cart1);
